@@ -1,0 +1,228 @@
+body {
+	background-color: #7b6b43;
+}
+/* ------ADD NAVBAR & FOOTER HERE */
+#testimonial_area {
+	padding: 10% 0;
+}
+.section_padding{
+	margin-top: 45px;
+}
+.logoimg img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display:flex;
+	position: float;
+}
+.h-text{
+    max-width: 80em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,30%);
+    /*text-align: center;*/
+    color:white;
+    text-align: left;
+}
+header{
+    width: 100%;
+   /* height: 100vh; */
+    /* background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)),
+              url(/pics/yellorangepic.jpeg); */
+    background-size: cover;
+    font-family: sans-serif;
+	
+  }
+  
+  nav{
+    width:100%;
+    height: 100px;
+   /* background: white;*/
+    color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: float;
+    top: 0;
+    width: 100%;
+
+  }
+  
+  
+  
+  .logo, a{
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+  }
+  
+  .nav-links a:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid rgb(247, 182, 2);
+    transition: 0.4s linear;
+  }
+  
+  .nav-links a:hover:before{
+    width: 90%;
+  }
+  .donate a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: rgb(44, 113, 44);
+    border-radius: 30px;
+
+  }
+  
+  .donate a:hover{
+    background: transparent;
+    border: 1px solid rgb(44, 113, 44);
+  }
+.h-text, h1 {
+    font-size: 2em;
+}
+.statement{
+    text-align: center;
+    margin: 20px;
+}
+.second{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)),
+                url(/pics/farmmeet.jpg);
+    background-size: cover;
+}
+.box-area {
+	padding: 30px;
+	position: relative;
+	display: block;
+	background: #851414;
+	color: #dbebc0;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin: 40px 0;
+}
+.box-area h5 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #dbebc0;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box-area span {
+	color: #cbd4c2;
+	display: block;
+	font-size: 13px;
+	margin: 0 0 10px;
+	font-weight: 400;
+}
+.box-area .content {
+	color: #c3b299;
+}
+.box-area .img-area img {
+	width: 140px;
+	height: 140px;
+	position: float;
+	top: -40px;
+	left: 0;
+	bottom: 0;
+	margin: 0 auto;
+	right: 0;
+	z-index: 1;
+	border: 5px solid #c3b299;
+	border-radius: 50%;
+	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.socials {
+	margin-top: 30px;
+}
+.socials i {
+	margin: 0 10px;
+	color: #cbd4c2;
+	font-size: 18px;
+}
+#testimonial_area .owl-nav {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+#testimonial_area .owl-prev, #testimonial_area .owl-next {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: #cbd4c2;
+	border-radius: 50%;
+	text-align: center;
+	background: #851414;
+	position: absolute;
+}
+
+#testimonial_area .owl-prev {
+	left: -60px;
+	top: -30px;
+}
+#testimonial_area .owl-next {
+	right: -60px;
+	top: -30px;
+}
+@media only screen and (max-width: 991px) {
+	.owl-nav {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.box-area {
+		text-align: center;
+	}
+	.owl-nav {
+		display: none;
+	}
+}
+
+.email-container{
+    background-color: #7b6b43;
+    text-align: center;
+  }
+.last-donate a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: rgb(44, 113, 44);
+    border-radius: 30px;
+  }
+  
+  .last-donate a:hover{
+    background: rgba(86, 63, 0, 0.71);
+    border: 1px solid rgb(44, 113, 44);
+  }
+
+
+
+
+
+
+
+
+
+
+
