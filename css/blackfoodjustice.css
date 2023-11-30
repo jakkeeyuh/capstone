@@ -8,22 +8,26 @@
     --color: #851414;
   }*/
   
-  /*.dark-mode {
+  .dark-mode {
     --background-color: #851414;
     --color: #cbd4c2;
-  }*/
+  }
+
+  body {
+    background-color: #7b6b43;
+  }
   
   /*body {
     background-color: var(--background-color);
     color: var(--color);
   }*/
   
-  /*button {
+  button {
     background-color: var(--background-color);
     color: var(--color);
-  }*/
+  }
   
-  /*@media screen and (max-width: 767px) /*{
+  @media screen and (max-width: 767px) /*{
   
     /* CSS styles for smartphones and smaller screens */
     /*.brand-logo {
@@ -33,32 +37,33 @@
   @media screen and (min-width: 768px) and (max-width: 1023px) {
   
     /* CSS styles for tablets and medium-sized screens */
-    /* .brand-logo {
+   /* .brand-logo {
       add dimensions
     }
   }*/
   
- /* @media screen and (min-width: 1024px) { */
+  @media screen and (min-width: 1024px) { 
+
+    
+  }
   
     /* CSS styles for larger desktop screens 
     .brand-logo {
       add dimensions
-    }
-  }*/
+    } */
+
 
   *{
     padding:0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #7b6b43;
   }
-
   
   header{
     width: 100%;
     height: 100vh;
     background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)),
-              url('../pics/yellorangepic.jpeg');
+              url(/pics/yellorangepic.jpeg);
     background-size: cover;
     font-family: sans-serif;
   }
@@ -74,6 +79,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 3;
   }
   
   
@@ -130,6 +136,7 @@
     display:flex;
   }
   
+  
   .h-text{
     max-width: 80em;
     position: absolute;
@@ -139,27 +146,169 @@
     /*text-align: center;*/
     color:white;
     text-align: left;
-    }
+  }
   
   .h-text, h1 {
     font-size: 2em;
-    background-color: transparent;
   }
   
   .statement{
     text-align: center;
-    margin: 20px;
+    margin: 15px;
   }
-  
-  .second{
+
+  /* slideshow styling */
+  /* .second{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)),
-                url(../pics/farmmeet.jpg);
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1));
     background-size: cover;
-  }
+  } */
   
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1050px;
+  max-height: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 50px; /*space between statement and container*/
+  box-shadow: 2px 2px 2px 2px;
+  /* box-shadow: 3px 3px #851414, -1em 0 .4em rgb(0, 0, 0); */
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20px;
+  margin-left: 20px;
+  margin-right: -20px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  background-color: #cbd4c2;
+  font-size: 15px;
+  padding: 8px 10px;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 15px;
+  padding: 75px 25px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
   
+
+/* platform */
+
+img {
+  margin: 20px;
+}
+
+#platform {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 25%;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  background-color: #851414;
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-color: #DBEBC0;
+}
+
+.card h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  color: white;
+}
+
+.card p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #DBEBC0;
+}
+
+/* donation */
   .last-donate a{
     text-decoration: none;
     color: white;
