@@ -105,7 +105,7 @@ h1{
 }
 
 .about-pics {
-    background-color: #dbebc0;
+    background-color: #c3b299;
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
@@ -115,5 +115,5 @@ h1{
 
 footer{
     text-align: center;
-    padding: 5px;
+    padding: 1px;
   }
