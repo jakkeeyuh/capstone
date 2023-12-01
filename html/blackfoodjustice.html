@@ -4,63 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBFJA</title>
-    <link rel="stylesheet" href="blackfoodjustice.css">
-
-    
-
-
-    <!--<a class="site-logo" href="#">
-    <img src="bfj.png" alt="" id="logo-img"> Logo
-    </a>-->
-
+    <link rel="stylesheet" href="../css/blackfoodjustice.css">
 
 
 </head>
+<header>
+    <nav id="nav" class="nav">
+    
+    
+        <div class="logoimg"> <a href="../html/blackfoodjustice.html">
+            <img src="../pics/bfj.png" alt="logo">
+        </div>
 
+        <div class="logo">
+            <a href="#">NBFJA </a>
+        </div>
+
+        <div class="nav-links">
+            <a href="../html/blackfoodjustice.html">Home</a>
+            <a href="../html/index.html">About</a>
+            <a href="#">Contact</a>
+            <a href="../Testimonials/testimonials.html">Testimonials</a>
+        </div>
+
+        <div class="donate">
+            <a href="#">Donate</a>
+        </div>
+    </nav>
+
+
+    <section class="h-text">
+        <h1> National Black Food <br>& Justice Alliance</h1>
+    </section>
+
+</header>
 <body>
 
-    <header>
-        <nav id="nav" class="nav">
-        
-        
-            <div class="logoimg"> <img src="/pics/bfj.png" alt=""  >
-                <a href="#"></a>
-            </div>
-
-            <div class="logo">
-            <!-- <img src="bfj.png" alt="" id="bfj">-->
-                <a href="#">NBFJA </a>
-            </div>
-
-            <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Testimonials</a>
-            </div>
-
-            <div class="donate">
-                <a href="#">Donate</a>
-            </div>
-        </nav>
-
-
-        <section class="h-text">
-            <h1> National Black Food <br>& Justice Alliance</h1>
-        </section>
-
-    </header>
-
-
-
+    
     <main class="main">
         <div class="statement">
             <h2>
-                NBFJA STATEMENT
+                Our goal is to empower Black people to not only possess the right to control our food, 
+                but also to have the capability to do so, through various means such as the means of production and distribution.
             </h2>
-            <p>
-
-            </p>
+            
         </div>
     </main>
 
@@ -70,20 +57,20 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img src="pics/crops.jpeg" style="width:100%">
+            <img src="../pics/crops.jpeg" style="width:100%">
             <div class="text">Collaboratively, we are creating, constructing, and safeguarding spaces for our 
         communities that are both nurturing and secure, fostering liberation—an essential and well-deserved endeavor.</div>
         </div>
   
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img src="pics/blackpeople.jpg" style="width:100%">
+            <img src="../pics/blackpeople.jpg" style="width:100%">
             <div class="text">Justice For Black Farmers Act</div>
         </div>
   
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <img src="pics/justice.jpeg" style="width:100%">
+            <img src="../pics/justice.jpeg" style="width:100%">
             <div class="text">Justice For Black Farmers Now!</div>
         </div>
   
@@ -128,36 +115,69 @@
         </div>
     </div>
 
-    <footer>
+
         <div class="section-donate">
-            <h2>
-                Help Make a Difference
-            </h2>
-            <div class="last-donate">
-            <a href="#">Donate</a>
+            <div class="grid">
+                <h2>Help Make a Difference</h2>
+                <br>
+                <a class="last-donate" href="#">Donate</a>
+            </div>
+    
+    
+            <div class="grid">
+            <form action="action_page.php">
+                <div class="container">
+                    <h3>Stay informed with emails from us!</h3>
+                    <!--<p>Lorem ipsum..</p>-->
+                </div>
+            <br>
+                <div class="email-container" >
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Email address" name="mail" required>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            </div>
         </div>
+                
+
+                <footer>
+                    &copy 2023 Power Coders 
+            
+                </footer>
+    </body>
 
 
-        <form action="action_page.php">
-            <div class="container">
-                <h3>Stay informed with emails from us</h3>
-                <p>Lorem ipsum..</p>
-            </div>
-      
-            <div class="email-container" >
-                <input type="text" placeholder="Name" name="name" required>
-                <input type="text" placeholder="Email address" name="mail" required>
-          
-            </div>
-      
-            <div class="container">
-                <input type="submit" value="Subscribe">
-            </div>
-        </form>
 
-    </footer>
+    
 
-    <script src="js/blackfoodjustice.js"></script>
+    <!--<script src="js/blackfoodjustice.js"></script>-->
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
 
-</body>
 </html>
