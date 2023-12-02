@@ -53,7 +53,7 @@ header{
   
   
   
-  .logo, a{
+  .logo, a, a:hover{
     font-size: 18px;
     letter-spacing: 2px;
     text-decoration: none;
